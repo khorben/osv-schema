@@ -8,7 +8,7 @@ aside:
 show_edit_on_github: true
 ---
 
-**Version 1.6.4 (April 11, 2024)**
+**Version 1.6.5 (April 23, 2024)**
 
 Original authors:
 - Oliver Chang (ochang@google.com)
@@ -219,6 +219,17 @@ The defined database prefixes and their "home" databases are:
           <li>How to contribute: TBD</li>
           <li>Source URL: <code>https://debian.org/security/&lt;YEAR&gt;/&lt;ID&gt;</code> (lowercase dsa)</li>
           <li>OSV Formatted URL: <code>https://api.osv.dev/v1/vulns/&lt;ID&gt;</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><code>FreeBSD-SA</code></td>
+      <td><a href="https://www.freebsd.org/security/advisories/">FreeBSD Security Advisories</a></td>
+      <td>
+        <ul>
+          <li>How to contribute: <code>https://www.freebsd.org/security/reporting/</code></li>
+          <li>Source URL: <code>https://www.freebsd.org/security/advisories/&lt;ID&gt;.asc</code></li>
+          <li>OSV Formatted URL: <code>TBD</code></li>
         </ul>
       </td>
     </tr>
@@ -639,6 +650,7 @@ The defined ecosystems are:
 | `CRAN` | The R package ecosystem. The `name` is an R package name. |
 | `crates.io` | The crates.io ecosystem for Rust; the `name` field is a crate name.  |
 | `Debian` | The Debian package ecosystem; the `name` is the name of the source package. The ecosystem string might optionally have a `:<RELEASE>` suffix to scope the package to a particular Debian release. `<RELEASE>` is a numeric version specified in the [Debian distro-info-data](https://debian.pages.debian.net/distro-info-data/debian.csv). For example, the ecosystem string "Debian:7" refers to the Debian 7 (wheezy) release.  |
+| `FreeBSD` | The FreeBSD ecosystem; the `name` is the name of the source package. The ecosystem string must have a `:<RELEASE-NUMBER>:base` suffix to scope the particular FreeBSD release (e.g., `FreeBSD:14:base`) or a `:ports` suffix to scope the ports collection instead. |
 | `GHC` | The Haskell compiler ecosystem. The `name` field is the name of a component of the GHC compiler ecosystem (e.g., compiler, GHCI, RTS).  |
 | `GitHub Actions` | The GitHub Actions ecosystem; the `name` field is the action's repository name with owner e.g. `{owner}/{repo}`. |
 | `Go` | The Go ecosystem; the `name` field is a Go module path.  |

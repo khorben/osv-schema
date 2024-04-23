@@ -4,6 +4,7 @@ This is the repository for the Open Source Vulnerability schema (OSV Schema), wh
 - [AlmaLinux](https://github.com/AlmaLinux/osv-database)
 - [Bitnami Vulnerability Database](https://github.com/bitnami/vulndb)
 - [Curl](https://curl.se/docs/vuln.json)
+- [FreeBSD](https://osv.freebsd.org)
 - [GitHub Security Advisories](https://github.com/github/advisory-database)
 - [Global Security Database](https://github.com/cloudsecurityalliance/gsd-database)
 - [Go Vulnerability Database](https://github.com/golang/vulndb)
@@ -28,6 +29,7 @@ Together, these include vulnerabilities from:
 -   Bitnami
 -   crates.io
 -   Debian GNU/Linux
+-   FreeBSD
 -   GitHub Actions
 -   Go
 -   Haskell
